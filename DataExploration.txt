@@ -1,0 +1,49 @@
+https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
+
+correlation is an estimate of linear dependence of the two variables.
+
+Is Correlation Transitive?
+C(x,y) = C(y,z) * C(z,x) - Square Root ( (1 - C(y,z)^2 ) *  (1 - C(z,x)^2 ) )
+
+ Correlation vs. co-variance
+
+
+Correlation is simply the normalized co-variance with the standard deviation of both the factors. This is done to ensure we get a number between +1 and -1. Co-variance is very difficult to compare as it depends on the units of the two variable. It might come out to be the case that marks of student is more correlated to his toe nail in mili-meters than it is to his attendance rate.
+
+This is just because of the difference in units of the second variable. Hence, we see a need to normalize this co-variance with some spread to make sure we compare apples with apples. This normalized number is known as the correlation.
+
+Steps involved: 
+
+Variable Identification
+Univariate Analysis
+Bi-variate Analysis
+Missing values treatment
+Outlier treatment
+Variable transformation
+Variable creation
+
+
+Continuous Variables:- In case of continuous variables, we need to understand the ...central tendency (Mean,Median,Mode,Min,Max) and spread of the variable.... 
+
+Categorical Variables:- For categorical variables, we’ll use frequency table to understand distribution of each category. We can also read as percentage of values under each category. It can be be measured using two metrics, Count and Count% against each category. ...Bar chart... can be used as visualization.
+
+Continuous & Continuous: While doing bi-variate analysis between two continuous variables, we should look at scatter plot. It is a nifty way to find out the relationship between two variables. The pattern of scatter plot indicates the relationship between variables. The relationship can be linear or non-linear.
+
+
+Correlation = Covariance(X,Y) / SQRT( Var(X)* Var(Y))
+
+Categorical & Categorical: To find the relationship between two categorical variables, we can use following methods:
+
+Two-way table: We can start analyzing the relationship by creating a two-way table of count and count%. The rows represents the category of one variable and the columns represent the categories of the other variable. We show count or count% of observations available in each combination of row and column categories.
+Stacked Column Chart: This method is more of a visual form of Two-way table.
+
+
+Chi-Square Test: Chi-square is based on the difference between the expected and observed frequencies in one or more categories in the two-way table. It returns probability for the computed chi-square distribution with the degree of freedom.
+Probability of 0: It indicates that both categorical variable are dependent
+
+Probability of 1: It shows that both variables are independent.
+
+Categorical & Continuous: While exploring relation between categorical and continuous variables, we can draw ....box plots... for each level of categorical variables.
+
+
+Reference: https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/#one
